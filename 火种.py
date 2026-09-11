@@ -35,8 +35,8 @@ API_SERVERS = [
 ]
 
 # ⚠️ 这里填入你用“火种注册.py”注册成功的账号和密码
-USERNAME = "grwu8hw0oq"
-PASSWORD = "4g9qjv6gli"
+USERNAME = "qur0rhsf75"
+PASSWORD = "v9x5hee99i"
 CLIENT_ID = "vpn-user"
 CLIENT_SECRET = "i16bYq4sXxlGl3s"
 
