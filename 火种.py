@@ -44,15 +44,8 @@ EXCLUDED_LEVELS = {"SVIP"}
 # 并发线程数
 MAX_WORKERS = 8
 
-# 输出文件路径
-if os.path.exists("/storage/emulated/0/Download"):
-    OUTPUT_FILE = "/storage/emulated/0/Download/huozhong_links.txt"
-else:
-    _dl = os.path.join(os.path.expanduser("~"), "Downloads")
-    OUTPUT_FILE = os.path.join(
-        _dl if os.path.isdir(_dl) else os.path.expanduser("~"),
-        "huozhong_links.txt",
-    )
+# 输出文件路径：直接保存在当前所在目录，方便 GitHub Actions 提取和推送
+OUTPUT_FILE = "huozhong_links.txt"
 
 # ==================== 会话与 Headers（依据抓包修正） ====================
 # 抓包中客户端直接用 IP 访问，Host 头 = IP，没有伪造域名
